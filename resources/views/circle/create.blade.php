@@ -63,7 +63,7 @@
         </div>
 
         {{-- ================= STRUKTUR ORGANISASI ================= --}}
-        @if(isset($circle))
+        @if($circle)
         <div class="w-full lg:w-7/12 px-4">
             <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl">
                 <h4 class="text-zinc-100 font-black text-sm uppercase tracking-[0.3em] mb-8 flex items-center">

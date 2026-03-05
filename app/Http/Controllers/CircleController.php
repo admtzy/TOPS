@@ -15,7 +15,7 @@ class CircleController extends Controller
 
     public function index()
     {
-        $circle = Circle::with('structures.member')->first();
+        $circle = Circle::with('structures.member')->first() ?? new Circle();
 
         $members = User::where('role','member')->get();
 
@@ -27,8 +27,8 @@ class CircleController extends Controller
     public function create()
     {
         $members = User::where('role','member')->get();
-
-        return view('circle.create', compact('members'));
+        $circle = Circle::first() ?? new Circle();
+        return view('circle.create', compact('circle','members'));
     }
 
     /* ================= STORE ================= */
