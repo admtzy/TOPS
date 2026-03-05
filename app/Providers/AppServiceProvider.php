@@ -19,8 +19,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (!file_exists(public_path('storage'))) {
-            Artisan::call('storage:link');
-        }
     }
 }
