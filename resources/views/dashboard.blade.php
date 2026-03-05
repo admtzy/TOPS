@@ -327,7 +327,7 @@ sendBtn.addEventListener('click', async () => {
     userInput.value = '';
 
     try {
-        const res = await fetch("{{ route('agenda.api') }}?q=" + encodeURIComponent(question), {
+        const res = await fetch("/agenda-api?q=" + encodeURIComponent(question), {
             credentials: 'same-origin'
         });
         const data = await res.json();
