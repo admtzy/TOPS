@@ -11,13 +11,13 @@
         
         <div class="flex items-center">
             {{-- TOMBOL CREATE STRUKTUR (FIX KE ROUTE CREATE) --}}
-            <a href="{{ route('circle.manage') }}" 
+            <a href="{{ route('circle.create') }}" 
               class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-black uppercase px-6 py-4 rounded-2xl shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all flex items-center group scale-105 active:scale-95">
                <i class="fas fa-plus-circle mr-2 text-lg"></i> 
                 Create Structure
             </a>
 
-            <a href="{{ route('circle.manage') }}" 
+            <a href="{{ route('circle.create') }}" 
                class="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-black uppercase px-6 py-4 rounded-2xl border border-zinc-700 transition-all flex items-center group">
                 <i class="fas fa-cog mr-2 group-hover:rotate-90 transition-transform"></i> 
                 Manage
