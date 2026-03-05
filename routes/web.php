@@ -43,7 +43,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/circle', [CircleController::class, 'index'])->name('circle.index');
 
     // Circle manage (admin/member login)
-    Route::get('/circle/manage', [CircleController::class, 'create'])->name('circle.manage');
+    Route::get('/circle/create', [CircleController::class, 'create'])->name('circle.create');
     Route::post('/circle', [CircleController::class, 'store'])->name('circle.store');
     Route::put('/circle/{circle}', [CircleController::class, 'update'])->name('circle.update');
 
